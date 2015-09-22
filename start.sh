@@ -3,7 +3,7 @@
 if [ "$#" -lt 1 ]; then
     echo
     echo ' Usage:'
-    echo '      docker run -d --name="tinyproxy" [-e "LOG_LEVEL=<LogLevel>"] -p <HostPort>:8888 tinyproxy <ACL>'
+    echo '      docker run -d --name="tinyproxy" [-e "LOG_LEVEL=<LogLevel>"] [-e "CONNECT_PORT=all"] -p <HostPort>:8888 tinyproxy <ACL>'
     echo
     echo '          - Set <LogLevel>. Can be set with "Info" (default value), "Connect", "Notice", "Warning", "Error" or "Critical"'
     echo '          - Set <HostPort> to the port you wish the proxy to be accessible from.'
