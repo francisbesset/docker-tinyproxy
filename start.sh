@@ -38,4 +38,4 @@ if [ -n "${CONNECT_PORT}" ]; then
 fi
 
 tinyproxy -c /etc/tinyproxy.conf
-tail -f /var/log/tinyproxy/tinyproxy.log
+tail -f --retry /var/log/tinyproxy/tinyproxy.log
