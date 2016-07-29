@@ -5,7 +5,7 @@
 Starting a tinyproxy instance is simple:
 
 ```bash
-$ docker run -d --name="tinyproxy" [-e "LOG_LEVEL=<LogLevel>"] [-e "CONNECT_PORT=all"] -p <HostPort>:8888 francisbesset/tinyproxy <ACL>'
+$ docker run -d --name="tinyproxy" [-e "LOG_LEVEL=<LogLevel>"] [-e "CONNECT_PORT=all"] -p <HostPort>:8888 francisbesset/tinyproxy <ACL>
 ```
 
 * Set <LogLevel>. Can be set with "Info" (default value), "Connect", "Notice", "Warning", "Error" or "Critical".
